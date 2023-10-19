@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+    <!--eu uso o css junto com o html porque eu acho mais simples e facil-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+    </header>
+    <div class="container">
+        <h2>Quem Sou Eu?</h2>
+        <p>Olá, meu nome é Paulo Bento Silveira Neto. Sou um estudante de ADS com interesse em aprender mais a cada dia.</p>
+        
+        <h2>Minhas Habilidades</h2>
+        <ul>
+            <li>1-Aprendo fácil</li>
+            <li>2-Prestativo</li>
+            <li>3-Sou uma pessoa Ágil</li>
+        </ul>
+        
+        <h2>Formação Educacional</h2>
+        <ul>
+            <li>Esino médio completo: IESB ceilandia, 2021</li>
+            <li>faculdade de ADS 2 semestre: Uninter, em curso</li>
+            <!--aqui eu coloquei minhas habilidades  e minha formacao educacional com div para o css-->
+        </ul>
+        <!--a parte de baixo esta o input com nome, email e uma mensagem-->
+
+        <!--bom e eu nao sabia se era pra deiaxr o input do nome e email em braco e deixarei assim-->
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
